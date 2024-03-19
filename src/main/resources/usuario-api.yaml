@@ -26,8 +26,8 @@ paths:
   /v1/es/usuario:
     post:
       tags:
-        - Crear usuario
-      operationId: crearUsuario
+        - Crete user
+      operationId: createUser
       requestBody:
         description: Crear usuario
         content:
@@ -50,7 +50,7 @@ paths:
   /v1/es/listUsuario/{idtbl_user}:
     get:
       tags:
-        - Listar usuario
+        - Get user
       parameters:
         - in: path
           name: idtbl_user   # Note the name is the same as in the path
@@ -59,7 +59,7 @@ paths:
             type: integer
             minimum: 1
           description: The user ID
-      operationId: listarUsuario
+      operationId: getUser
       responses:
         "200":
           description: Usuario creado.
@@ -77,7 +77,7 @@ paths:
   /v1/es/eliminarUsuario/{idtbl_user}:
     delete:
       tags:
-        - Eliminar usuario
+        - Delete user
       parameters:
         - in: path
           name: idtbl_user   # Note the name is the same as in the path
@@ -86,7 +86,7 @@ paths:
             type: integer
             minimum: 1
           description: The user ID
-      operationId: eliminarUsuario
+      operationId: deleteUser
       responses:
         "200":
           description: Usuario eliminado.
@@ -97,7 +97,7 @@ paths:
   /v1/es/editarUsuario/{idtbl_user}:
     put:
       tags:
-        - Editar usuario
+        - Update user
       parameters:
         - in: path
           name: idtbl_user   # Note the name is the same as in the path
@@ -106,7 +106,7 @@ paths:
             type: integer
             minimum: 1
           description: The user ID
-      operationId: editarUsuario
+      operationId: updateUser
       requestBody:
         description: Editar usuario
         content:
@@ -131,8 +131,8 @@ paths:
   /v1/es/listarTodo:
     get:
       tags:
-        - Listar todos los usuario
-      operationId: listarTodosLosUsuario
+        - Get all user
+      operationId: getAllUser
       responses:
         "200":
           description: Lista de usuario.

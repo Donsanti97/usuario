@@ -1,4 +1,4 @@
-package co.samtel.usuario.utils;
+package co.samtel.usuario.utils.exeption;
 
 public class ApplicationException extends RuntimeException {
     private static final long serialVersionUID = 1L;
